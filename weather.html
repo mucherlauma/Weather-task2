@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Report</title>
+    <link rel="stylesheet" href="weather-styles.css">
+</head>
+<body>
+    <div class="weather-report-container">
+         <div class="heading-box"> 
+            <h1 class="weather-heading">Weather Report</h1>
+        </div>
+        <!-- Weather icon element -->
+        <div class="weather-icon" id="weather-icon"></div>
+        <div class="weather-info">
+            <p>City: <span id="city"></span></p>
+            <p>Temperature: <span id="temperature"></span>°C</p>
+            <p>Description: <span id="description"></span></p>
+        </div>
+        <!-- Back button -->
+        <a href="index.html" class="back-button"><img src="icons/back.png" alt="Back" width="40" height="40"></a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="weather-script.js"></script>
+</body>
+</html>

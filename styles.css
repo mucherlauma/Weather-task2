@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+    margin: 0;
+    padding: 0;
+}
+
+.weather-container {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+    background-color: lightcyan;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="text"],
+button {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+.fetch-button,
+.location-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 0px; 
+}
+
+.fetch-button {
+    background-color: lightcyan;
+    color: #ffffff; 
+}
+
+.location-button {
+    background-color: deepskyblue; 
+    color: #ffffff; 
+}
+
+.fetch-button:hover,
+.location-button:hover {
+    opacity: 0.8;
+}
+
+.heading-box {
+    background-color: #ffffff; 
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #dddddd; 
+}
+
+.weather-heading {
+    margin: 0;
+    color: deepskyblue; 
+}
+
+#cityInput {
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px; 
+    margin-bottom: 10px;
+    width: 300px; 
+}
+
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 10px 0; /* Adjust spacing */
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #dddddd; /* Horizontal line color */
+}
+
+.or {
+    padding: 0 10px; /* Adjust spacing */
+    color: #999999; /* Color of the "or" text */
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-iqR1b7J3eQ+r5/tmmgk69X0Uv/oNCqeu+8Iq4gdfSUEV7QCg4g/8wCr1BrpDNhlY" crossorigin="anonymous">
+<body>
+    <div class="weather-container">
+        <div class="heading-box">
+            <h1 class="weather-heading">Weather App</h1>
+        </div>
+        <input type="text" id="cityInput" placeholder="Enter city name">
+        <button onclick="fetchWeatherData()" class="fetch-button"><img src="icons/arrow.png" alt="Search" width="25" height="25"></button>
+        <br>
+        <div class="divider"><span class="or">or</span></div>
+        <button onclick="getCurrentLocation()" class="location-button"><img src="icons/current-location.png" alt="Search" width="20" height="20"> Use Current Location</button>
+            
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
